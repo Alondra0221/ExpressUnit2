@@ -1,0 +1,20 @@
+<style>
+    img{width:10%;}
+</style>
+
+<h1>List of users</h1>
+
+
+{{#if users}}
+<ul>
+    <ul class="people_list">
+        {{#each users}}
+        <li>{{this.userName}} 
+            <img src="{{this.avatar}}" alt="user avatar"/>
+        </li>
+        {{/each}} 
+    </ul>
+</ul>
+{{else}}
+<h1>No data founded</h1>
+{{/if}}
