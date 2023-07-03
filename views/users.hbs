@@ -1,16 +1,20 @@
 <style>
-    img{width:10%;}
+    img{width:64px;}
 </style>
-
+<a href="/adduser">Create a new user</a>
 <h1>List of users</h1>
+
 
 
 {{#if users}}
 <ul>
     <ul class="people_list">
         {{#each users}}
-        <li>{{this.userName}} 
+        <li>
+            <p>{{this.userName}} </p>
             <img src="{{this.avatar}}" alt="user avatar"/>
+            <a href="/adduser/{{this.id}}">Update</a>
+            <button class="delete" data-id="{{this.id}}">Delete</button>
         </li>
         {{/each}} 
     </ul>
@@ -18,3 +22,21 @@
 {{else}}
 <h1>No data founded</h1>
 {{/if}}
+
+<script>
+    $(".delete").on("click",function(){
+        
+        let id = this.dataset.id;
+        fetch(`/delete/${id}`,
+        {
+            method: "DELETE"
+        }
+        ).then((data) => {
+            if(data.status==200){
+                $(this).parent().remove();
+            }
+        });
+        
+        //console.log(id);
+    });
+</script>

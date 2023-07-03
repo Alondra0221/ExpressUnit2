@@ -1,0 +1,50 @@
+<div role="main" class="main shop">
+
+    <div class="container">
+        <hr class="tall">
+
+        <div class="row">
+			<div class="col-md-6">
+				<a href="addproduct">Create a new product</a>
+				<h1 class="shorter"><strong>Shop</strong></h1>
+				<p>Showing 1–12 of 25 results.</p>
+			</div>
+		</div>
+
+        <div class="row">
+			{{#if products}}
+
+            			<ul class="products product-thumb-info-list" data-plugin-masonry>
+							{{#each products}}
+							<li class="col-md-3 col-sm-6 col-xs-12 product">
+								<span class="product-thumb-info">
+									<a href="/products/productinfo/{{this.productID}}">
+										<span class="product-thumb-info-image">
+											<span class="product-thumb-info-act">
+												<span class="product-thumb-info-act-left"><em>View</em></span>
+												<span class="product-thumb-info-act-right"><em><i class="fa fa-plus"></i> Details</em></span>
+											</span>
+											<img alt="" class="img-responsive" src="{{this.image}}">
+										</span>
+									</a>
+									<span class="product-thumb-info-content">
+										<a href="/products/productinfo/{{this.productID}}">
+											<h4>{{this.title}}</h4>
+											<span class="price">
+												<ins><span class="amount">{{this.price}}</span></ins>
+											</span>
+										</a>
+									</span>
+								</span>
+							</li>
+							{{/each}}
+						</ul>
+			{{else}}
+			<h1>No data to show</h1>
+			{{/if}}
+
+        </div>
+
+    </div>
+
+</div>

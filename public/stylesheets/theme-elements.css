@@ -449,16 +449,16 @@ ul.icons [class^="fa-"] {
 }
 
 /* Thumbnails */
-.img-thumbnail {
+.images-thumbnail {
 	border-radius: 6px;
 	position: relative;
 }
 
-.img-thumbnail img {
+.images-thumbnail images {
 	border-radius: 4px;
 }
 
-.img-thumbnail .zoom {
+.images-thumbnail .zoom {
 	background: #CCC;
 	border-radius: 100%;
 	bottom: 8px;
@@ -472,7 +472,7 @@ ul.icons [class^="fa-"] {
 	width: 30px;
 }
 
-.img-thumbnail .zoom i {
+.images-thumbnail .zoom i {
 	font-size: 14px;
 	left: -1px;
 	position: relative;
@@ -1049,7 +1049,7 @@ ul.sitemap.list ul {
 }
 
 /* Testimonials */
-.owl-carousel.testimonials img {
+.owl-carousel.testimonials images {
 	display: inline-block;
 	height: 70px;
 	width: 70px;
@@ -1103,7 +1103,7 @@ section.video .container {
 }
 
 section.video .video-overlay {
-	background: transparent url(../img/video-overlay.png) repeat 0 0;
+	background: transparent url(../images/video-overlay.png) repeat 0 0;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1335,7 +1335,7 @@ hr.invisible {
 	margin: 25px 0;
 }
 
-.alert-admin img {
+.alert-admin images {
 	margin: -50px 0 0;
 }
 
@@ -1404,13 +1404,13 @@ hr.invisible {
 	width: 40%;
 }
 
-.sort-destination.full-width .isotope-item .img-thumbnail {
+.sort-destination.full-width .isotope-item .images-thumbnail {
 	border: 0;
 	padding: 0;
 	margin: 0;
 }
 
-.sort-destination.full-width .isotope-item .img-thumbnail, .sort-destination.full-width .isotope-item a, .sort-destination.full-width .isotope-item .thumb-info img {
+.sort-destination.full-width .isotope-item .images-thumbnail, .sort-destination.full-width .isotope-item a, .sort-destination.full-width .isotope-item .thumb-info images {
 	border-radius: 0;
 	float: left;
 }
@@ -1924,7 +1924,7 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 	text-transform: none;
 }
 
-.thumb-info img {
+.thumb-info images {
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	transition: all 0.2s linear;
@@ -1932,7 +1932,7 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 	position: relative;
 }
 
-.thumb-info:hover img {
+.thumb-info:hover images {
 	-webkit-transform: scale(1.1, 1.1);
 	-moz-transform: scale(1.1, 1.1);
 	-ms-transform: scale(1.1, 1.1);
@@ -2185,13 +2185,13 @@ section.timeline .timeline-box.right:after {
 	z-index: 0;
 }
 
-section.timeline .timeline-box .img-thumbnail {
+section.timeline .timeline-box .images-thumbnail {
 	border-radius: 0;
 	padding: 0;
 	border: 0;
 }
 
-section.timeline .timeline-box .img-thumbnail img {
+section.timeline .timeline-box .images-thumbnail images {
 	border-radius: 0;
 	padding: 0;
 	border: 0;
@@ -2320,13 +2320,13 @@ blockquote.testimonial p {
 	margin: 8px 0 0 8px;
 }
 
-.testimonial-author .img-thumbnail {
+.testimonial-author .images-thumbnail {
 	float: left;
 	margin-right: 10px;
 	width: auto;
 }
 
-.testimonial-author .img-thumbnail img {
+.testimonial-author .images-thumbnail images {
 	max-width: 60px;
 }
 
@@ -2399,7 +2399,7 @@ ul.social-icons li {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	background-image: url(../img/social-sprites.png);
+	background-image: url(../images/social-sprites.png);
 	background-repeat: no-repeat;
 	background-position: 0 100px;
 	display: inline-block;
@@ -2698,7 +2698,7 @@ ul.social-icons li.vk:hover {
 
 /* Arrows */
 .arrow {
-	background: transparent url(../img/arrows.png) no-repeat 0 0;
+	background: transparent url(../images/arrows.png) no-repeat 0 0;
 	width: 47px;
 	height: 120px;
 	display: inline-block;
@@ -3187,7 +3187,7 @@ ul.history li p {
 }
 
 ul.history li .thumb {
-	background: transparent url(../img/history-thumb.png) no-repeat 0 0;
+	background: transparent url(../images/history-thumb.png) no-repeat 0 0;
 	width: 227px;
 	height: 160px;
 	margin: 0 0 30px;
@@ -3195,7 +3195,7 @@ ul.history li .thumb {
 	float: left;
 }
 
-ul.history li .thumb img {
+ul.history li .thumb images {
 	border-radius: 150px;
 	margin: 7px 8px;
 	width: 145px;
@@ -3243,7 +3243,7 @@ ul.history li .featured-box .box-content {
 	clear: both;
 }
 
-.google-map img {
+.google-map images {
 	max-width: 9999px;
 }
 

@@ -1,0 +1,43 @@
+<div role="main" class="main shop">
+    <div class="container">
+        <hr class="tall">
+        {{#if product}}
+					{{#each product}}
+        			<div class="row">
+						<div class="col-md-6">
+							<div>
+								<img src="{{this.image}}" alt="" class="img-responsive img-rounded">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+
+							<div class="summary entry-summary">
+
+								<h1 class="shorter"><strong>{{this.title}}</strong></h1>
+
+
+								<p class="price">
+									<span class="amount">{{this.price}}</span>
+								</p>
+
+								<p class="taller">{{this.description}} </p>
+
+								<form enctype="multipart/form-data" method="post" class="cart" action="/products/deleteproduct/{{this.productID}}">
+									<a href="/products/addproduct/{{this.productID}}" class="btn btn-dark">Update</a>
+									<button href="" class="delete btn btn-primary btn-icon" data-id="{{this.productID}}">Delete</button>
+								</form>
+
+							</div>
+
+
+						</div>
+					</div>
+					{{/each}}
+        {{else}}
+        <h1>No data found</h1>
+        {{/if}}
+
+    </div>
+</div>
+
